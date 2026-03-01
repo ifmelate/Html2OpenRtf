@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+
+    <!-- NuGet packaging -->
+    <PackageId>Html2OpenRtf</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>ifmelate</Authors>
+    <Description>Free, open-source HTML to RTF converter for .NET. Converts HTML (CKEditor, TinyMCE, etc.) to RTF format. Cross-platform, no dependencies on MS Office.</Description>
+    <PackageTags>html;rtf;converter;html-to-rtf;richtext;ckeditor;dotnet</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/ifmelate/Html2OpenRtf</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ifmelate/Html2OpenRtf</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+</Project>
